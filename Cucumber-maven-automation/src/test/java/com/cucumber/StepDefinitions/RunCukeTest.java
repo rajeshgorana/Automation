@@ -8,10 +8,12 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         features = "src/test/java/com/cucumber/features",
-        glue = "com.cucumber.StepDefinitions",
+        glue = { "com.cucumber.StepDefinitions" },
+        tags = {"@Login"},
         plugin = { 
                     "pretty",
-                    "html:target/cucumber-reports"
+                    "json:target/cucumber.json",
+                    "html:target/cucumber-html-reports"
                 } 
 
         )

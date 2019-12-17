@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -17,13 +18,16 @@ public class SeleniumFunctions    {
 	public static String baseURl = "https://google.co.in";
 	
 	public void createDriver() throws  InterruptedException {
-		
-//    //invoke Chrome Driver		
-//	System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\eclipse-workspace\\Cucumber-maven-automation\\chromedriver.exe");		
-//	driver = new ChromeDriver();
-	//  invoke geckdo driver 
-    System.setProperty("webdriver.gecko.driver", "C:\\Users\\HP\\eclipse-workspace\\Cucumber-maven-automation\\geckodriver.exe");
+	
+	/*System.setProperty("webdriver.chrome.driver", "C:\\Users\\HP\\git\\Automation\\Cucumber-maven-automation\\chromedriver.exe");		
+	driver = new ChromeDriver();
+*/
+    System.setProperty("webdriver.gecko.driver", "C:\\Users\\HP\\git\\Automation\\Cucumber-maven-automation\\geckodriver.exe");
     driver = new FirefoxDriver();
+	
+	/*System.setProperty("webdriver.ie.driver", "C:\\Users\\HP\\git\\Automation\\Cucumber-maven-automation\\IEDriverServer.exe");
+	driver = new InternetExplorerDriver();*/
+	
 		
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
@@ -36,20 +40,33 @@ public class SeleniumFunctions    {
 	public void closeDriver() {
 		
 		driver.close();
+		driver.quit();
 	}
 	
 	public void isHomeDisplayed() {
 		
-//		waitvar.until(ExpectedConditions.presenceOfElementLocated(By.id("gb_70")));
-		driver.findElement(By.id("gb_70")).isDisplayed();
+////		waitvar.until(ExpectedConditions.presenceOfElementLocated(By.id("gb_70")));
+//		
+//		driver.findElement(By.ByLinkText("/account/login?ret=/"))
+//		driver.findElement(By.id("gb_70")).isDisplayed();
 			
+		
+		driver.findElement(By.className("dHGf8H"));
 	}
 	
 	public void clickSinginLink() {
 		
-		driver.findElement(By.id("gb_70")).click();
+		driver.findElement(By.className("dHGf8H")).click();
 		
 	}
+	
+	public void Register() {
+		
+		driver.findElement(By.className("dHGf8H")).click();
+		
+	}
+	
+	
 
 
 }
