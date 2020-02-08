@@ -53,7 +53,45 @@
     <artifactId>cucumber-java8</artifactId>
     <version>1.2.5</version>
 </dependency>
-    
+    <!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>8.1.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>4.5.1</version>
+</dependency>
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>1.2.5</version>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>2.0.0</version>
+    <type>pom</type>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-core</artifactId>
+    <version>4.5.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>4.5.1</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java8 -->
+
+
 <!-- https://mvnrepository.com/artifact/junit/junit -->
 <dependency>
     <groupId>junit</groupId>
@@ -65,7 +103,15 @@
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>3.14.0</version>
+    <!-- https://mvnrepository.com/artifact/com.github.mkolisnyk/cucumber-report-generator -->
+    </dependency>
+
+<dependency>
+    <groupId>com.github.mkolisnyk</groupId>
+    <artifactId>cucumber-runner</artifactId>
+    <version>1.3.5</version>
 </dependency>
+
     </dependencies>
      <build>
     <pluginManagement>
@@ -75,10 +121,15 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.20.1</version>
         </plugin>
+        <plugin>
+           <groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.5.1</version>
+		</plugin>
            <plugin>
           <groupId>net.masterthought</groupId>
-          <artifactId>maven-cucumber-reporting</artifactId>
-          <version>3.15.0</version>
+          <artifactId>cucumber-reporting</artifactId>
+          <version>2.8.0</version>
           <executions>
           <execution>
           <id>execution</id>
@@ -86,16 +137,16 @@
           <goals>
           <goal>generate</goal>
           </goals>
-          <configuration>
-          <projectname>cucumner-jvm-example</projectname>
-          <ouputDirectory>${project.build.directory}/cucumber-JVM-reports</ouputDirectory>
-          <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
-          <enableFlashCharts>true</enableFlashCharts>
+          <configuration> 
+          <projectname>cucumber-jvm-example</projectname>
+          <outputDirectory>${project.build.directory}/cucumber-jvm-report</outputDirectory>
+          <cucumberOutput>${project.build.directory}/cucumber-report.json</cucumberOutput>
+          <enableFlashCharts>true</enableFlashCharts>     
           </configuration>
           </execution>
           </executions>
-        </plugin>
+        </plugin> 
       </plugins>
     </pluginManagement>
   </build>
-</project>
+</project> 

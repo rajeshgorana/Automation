@@ -28,6 +28,7 @@ public void user_Click_on_signIn_Button() throws Throwable {
 @Then("^logout from portal$")
 public void logout_from_portal() throws Throwable {
   sf.closeDriver();
+  
    }
 
 }
