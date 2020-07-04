@@ -65,6 +65,18 @@
     <artifactId>cucumber-java</artifactId>
     <version>4.5.1</version>
 </dependency>
+       <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-apache</artifactId>
+            <version>0.9.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.intuit.karate</groupId>
+            <artifactId>karate-junit4</artifactId>
+            <version>0.9.5</version>
+            <scope>test</scope>
+        </dependency>
 <dependency>
     <groupId>info.cukes</groupId>
     <artifactId>cucumber-testng</artifactId>
@@ -124,7 +136,7 @@
         <plugin>
            <groupId>org.apache.maven.plugins</groupId>
 			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.5.1</version>
+			<version>3.8.1</version>
 		</plugin>
            <plugin>
           <groupId>net.masterthought</groupId>

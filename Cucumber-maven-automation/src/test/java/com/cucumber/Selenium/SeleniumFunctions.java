@@ -16,18 +16,24 @@ public class SeleniumFunctions    {
 	public static WebDriver driver = null;
 	public static WebDriverWait waitvar = null;
 	public static String baseURl = "https://google.co.in";
-	public static String projDir = "C:\\Users\\HP\\git\\Automation\\Cucumber-maven-automation\\";
+	public static String projDir = "C:\\git\\Automation\\Cucumber-maven-automation\\";
 	
 	public void createDriver() throws  InterruptedException {
 	
-	/*System.setProperty("webdriver.chrome.driver", projDir+"chromedriver.exe");		
-	driver = new ChromeDriver();
-*/
-    System.setProperty("webdriver.gecko.driver", projDir+"geckodriver.exe");
-     driver = new FirefoxDriver();
-	
+		
+		//chrome Driver
+		  System.setProperty("webdriver.chrome.driver", projDir+"chromedriver.exe");
+		  driver = new ChromeDriver();
+		 
+    //firefox
+	/*
+	  System.setProperty("webdriver.gecko.driver", projDir+"geckodriver.exe");
+	  driver = new FirefoxDriver();*/
+	//IE
 	/*System.setProperty("webdriver.ie.driver", projDir+"IEDriverServer.exe");
 	driver = new InternetExplorerDriver();*/
+     
+     
 	
 		
 	driver.manage().window().maximize();

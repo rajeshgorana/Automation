@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(strict = false, format = { "pretty", "json:target/cucumber-report.json"}, tags = {"@login"},
 features = "src/test/java/com/cucumber/features",
-glue = "com.cucumber.StepDefinitions")
+glue = "com.cucumber.StepDefinitions", monochrome = true)
 public class RunCukeTest {
 	
 } 
