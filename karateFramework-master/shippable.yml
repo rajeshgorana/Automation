@@ -1,0 +1,67 @@
+# Language setting http://docs.shippable.com/ci/languages/node/
+language: java
+jdk: oraclejdk8
+
+# use this to control what branches get built.
+# http://docs.shippable.com/ci/advancedOptions/branches/
+branches:
+  only:
+    - master
+#
+## using pre-defined build variables
+## full list http://docs.shippable.com/ci/advancedOptions/environmentVariables/
+#env:
+#  global:
+#    - TEST_RESULTS_DIR=$SHIPPABLE_REPO_DIR/shippable/testresults
+#    - CODE_COVERAGE_DIR=$SHIPPABLE_REPO_DIR/shippable/codecoverage
+#    - TESTS_LOC_DIR=$SHIPPABLE_REPO_DIR/src/test/java/
+#    - MOD_LOC=$SHIPPABLE_REPO_DIR/node_modules/.bin/
+
+
+
+build:
+
+#  cache: true
+#  cache_dir_list:
+#    - /root/.m2
+
+  pre_ci:
+#    image_name: xxxxx
+#    image_tag: latest
+#    pull: true
+    - mkdir -p shippable/testresults
+    - mkdir -p shippable/codecoverage
+    - mkdir -p shippable/target
+    - echo "RUNNING BUILD......................................."
+    - echo "RUNNING AGAINST BUILD NUMBER:" $BUILD_NUMBER
+    - echo "RUNNING AGAINST BUILD URL   :" $BUILD_URL
+
+  ci:
+    - shippable_retry mvn clean install
+#    - shippable_retry mvn clean test -Dtest=DemoRunner cobertura:cobertura
+    - shippable_retry mvn clean test -Dtest=ParallelRunner cobertura:cobertura
+    - cp -r $SHIPPABLE_BUILD_DIR/target ./shippable/target
+    - cp -r $SHIPPABLE_BUILD_DIR/target/surefire-reports ./shippable/testresults
+#    - cp -r $SHIPPABLE_BUILD_DIR/target/surefire-reports/*.xml ./shippable/codecoverage
+    - echo "Checking Files"
+    - pwd
+    - ls
+    - cd $SHIPPABLE_BUILD_DIR/target/cobertura
+    - ls
+    - cd $SHIPPABLE_BUILD_DIR/shippable/buildoutput
+    - ls
+    - cd $SHIPPABLE_BUILD_DIR/shippable/codecoverage
+    - ls
+    - cd $SHIPPABLE_BUILD_DIR/shippable/target
+    - ls
+    - cd $SHIPPABLE_BUILD_DIR/shippable/testresults
+    - ls
+    - cd $SHIPPABLE_BUILD_DIR/shippable/target/cobertura
+    - ls
+
+#  post_ci:
+#
+
+
+
+

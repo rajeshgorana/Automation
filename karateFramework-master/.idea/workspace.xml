@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="faada2a6-1e08-40e8-8fa9-1c2c4337a1ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/shippable.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shippable.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="214" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1bKPjMbzeAWYsiScqU8TeHsRt31" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.yulikarate.test.testruns" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features" />
+      <recent name="$PROJECT_DIR$/src/test/java/com/yulikarate/test/testruns" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ParallelRunner">
+    <configuration name="Feature: weather" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/weather.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="karatetest" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: weather" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karatetest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yulikarate.test.testruns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yulikarate.test.testruns" />
+      <option name="MAIN_CLASS_NAME" value="com.yulikarate.test.testruns.DemoRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoRunner2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karatetest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yulikarate.test.testruns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yulikarate.test.testruns" />
+      <option name="MAIN_CLASS_NAME" value="com.yulikarate.test.testruns.DemoRunner2" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="karatetest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yulikarate.test.testruns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yulikarate.test.testruns" />
+      <option name="MAIN_CLASS_NAME" value="com.yulikarate.test.testruns.ParallelRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="karatetest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yulikarate.test.testruns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yulikarate.test.testruns" />
+      <option name="MAIN_CLASS_NAME" value="com.yulikarate.test.testruns.WeatherRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ParallelRunner" />
+        <item itemvalue="JUnit.DemoRunner" />
+        <item itemvalue="Cucumber java.Feature: weather" />
+        <item itemvalue="JUnit.DemoRunner2" />
+        <item itemvalue="TestNG.WeatherRunner" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="faada2a6-1e08-40e8-8fa9-1c2c4337a1ca" name="Default Changelist" comment="" />
+      <created>1588377945969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588377945969</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="769" y="-891" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588464852143">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="769" y="-891" key="#com.intellij.execution.impl.EditConfigurationsDialog/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588464852143" />
+    <state x="1019" y="-744" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588404119778">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="1019" y="-744" key="#com.intellij.fileTypes.FileTypeChooser/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588404119778" />
+    <state width="1559" height="11" key="GridCell.Tab.0.bottom" timestamp="1588484560085">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="274" key="GridCell.Tab.0.bottom/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588465857891" />
+    <state width="1559" height="11" key="GridCell.Tab.0.bottom/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588484560085" />
+    <state width="1559" height="274" key="GridCell.Tab.0.bottom/504.-1050.1680.1050/0.0.1680.1050@504.-1050.1680.1050" timestamp="1588468290207" />
+    <state width="1559" height="11" key="GridCell.Tab.0.center" timestamp="1588484560083">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="274" key="GridCell.Tab.0.center/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588465857889" />
+    <state width="1559" height="11" key="GridCell.Tab.0.center/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588484560083" />
+    <state width="1559" height="274" key="GridCell.Tab.0.center/504.-1050.1680.1050/0.0.1680.1050@504.-1050.1680.1050" timestamp="1588468290205" />
+    <state width="1559" height="11" key="GridCell.Tab.0.left" timestamp="1588484560082">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="274" key="GridCell.Tab.0.left/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588465857888" />
+    <state width="1559" height="11" key="GridCell.Tab.0.left/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588484560082" />
+    <state width="1559" height="274" key="GridCell.Tab.0.left/504.-1050.1680.1050/0.0.1680.1050@504.-1050.1680.1050" timestamp="1588468290204" />
+    <state width="1559" height="11" key="GridCell.Tab.0.right" timestamp="1588484560084">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="274" key="GridCell.Tab.0.right/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588465857890" />
+    <state width="1559" height="11" key="GridCell.Tab.0.right/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588484560084" />
+    <state width="1559" height="274" key="GridCell.Tab.0.right/504.-1050.1680.1050/0.0.1680.1050@504.-1050.1680.1050" timestamp="1588468290206" />
+    <state width="1559" height="313" key="GridCell.Tab.1.bottom" timestamp="1588405908951">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="313" key="GridCell.Tab.1.bottom/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588395501322" />
+    <state width="1559" height="313" key="GridCell.Tab.1.bottom/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588405908951" />
+    <state width="1559" height="313" key="GridCell.Tab.1.center" timestamp="1588405908949">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="313" key="GridCell.Tab.1.center/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588395501321" />
+    <state width="1559" height="313" key="GridCell.Tab.1.center/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588405908949" />
+    <state width="1559" height="313" key="GridCell.Tab.1.left" timestamp="1588405908949">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="313" key="GridCell.Tab.1.left/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588395501320" />
+    <state width="1559" height="313" key="GridCell.Tab.1.left/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588405908949" />
+    <state width="1559" height="313" key="GridCell.Tab.1.right" timestamp="1588405908950">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state width="1559" height="313" key="GridCell.Tab.1.right/504.-1027.1680.1027/0.0.1680.1050@504.-1027.1680.1027" timestamp="1588395501321" />
+    <state width="1559" height="313" key="GridCell.Tab.1.right/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588405908950" />
+    <state x="842" y="-891" key="Maven.ArtifactSearchDialog" timestamp="1588404249600">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="842" y="-891" key="Maven.ArtifactSearchDialog/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588404249600" />
+    <state x="380" y="108" width="1108" height="560" key="dock-window-1" timestamp="1588406488084">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="380" y="108" width="1108" height="560" key="dock-window-1/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588406488084" />
+    <state x="969" y="-820" width="670" height="676" key="search.everywhere.popup" timestamp="1588482025892">
+      <screen x="504" y="-1027" width="1680" height="1027" />
+    </state>
+    <state x="969" y="-820" width="670" height="676" key="search.everywhere.popup/504.-1027.1680.1027/0.23.1680.1027@504.-1027.1680.1027" timestamp="1588482025892" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/karatetest$DemoRunner.ic" NAME="DemoRunner Coverage Results" MODIFIED="1588395917645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.yulikarate.test.testruns.*</FILTER>
+    </SUITE>
+  </component>
+</project>
